@@ -12,27 +12,34 @@ public class PTra05_03 {
 		// 下記の命令は、入力型プログラムで必要な記述になります。
 		java.util.Scanner scanner = new java.util.Scanner(System.in);
 
-		// ★ int型の変数indexを宣言して、0で初期化してください
-
-
-		// ★ int型の変数mountainを宣言して、0で初期化してください
-
-
-		// ★ int型の変数riverを宣言して、0で初期化してください
-
-
-		// ★ int型の変数oceanを宣言して、0で初期化してください
-
+		int index = 0;// ★ int型の変数indexを宣言して、0で初期化してください
+		int mountain = 0;// ★ int型の変数mountainを宣言して、0で初期化してください
+		int river = 0;// ★ int型の変数riverを宣言して、0で初期化してください
+		int ocean = 0;// ★ int型の変数oceanを宣言して、0で初期化してください
 
 		// ★ 変数indexが5未満である間繰り返す条件式を記述してください
-		while () {
-
+		while (5 > index) {
 			System.out.println((index + 1) + "人目");
 			System.out.println("山、川、海でどこに行きたいか入力してください。");
+			index++;
 
 			// コマンドプロンプトで入力した文字列が変数lineに代入されます
 			String line = scanner.nextLine();
 
+			switch(line) {
+			case ("山"):
+				mountain++;
+				continue;
+			case ("川"):
+				river++;
+				continue;
+			case ("海"):
+				ocean++;
+				continue;
+			default:
+				System.out.println("無効票です");
+				continue;
+			}
 			/*
 			 * ★ 以下の仕様で、switch文を記述してください
 			 *
@@ -41,14 +48,13 @@ public class PTra05_03 {
 			 * ●変数lineが"海"であった場合		->	変数oceanに1加算
 			 * ●変数lineが上記以外であった場合	->	「無効票です」を出力
 			 */
-
-
-
-			// ★ 変数indexに1を足して、変数indexに代入してください
+		// ★ 変数indexに1を足して、変数indexに代入してください
 
 		}
 
-		// ★ 変数mountain、river、oceanの票数をそれぞれ出力してください
+		System.out.println("山：" + mountain);
+		System.out.println("川：" + river);
+		System.out.println("海" + ocean);// ★ 変数mountain、river、oceanの票数をそれぞれ出力してください
 
 	}
 }
