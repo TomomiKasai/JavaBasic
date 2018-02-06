@@ -26,9 +26,14 @@ public class PTra05_04 {
 		System.out.println("0～6の整数を入力してください");
 
 
-		while(true) {
+		boolean isContinue = true;
+
+		while(isContinue) {
+
 		String line = scanner.nextLine();
 		int input = Integer.parseInt(line);
+
+		isContinue = false;
 
 			switch(input) {
 			case 0:
@@ -54,6 +59,7 @@ public class PTra05_04 {
 				break;
 			default:
 				System.out.println("0～6の整数を入力してください");
+				isContinue = true;
 				continue;
 			}
 		}

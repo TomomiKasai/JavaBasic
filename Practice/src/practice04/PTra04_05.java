@@ -49,7 +49,7 @@ public class PTra04_05 {
 				continue;
 			}else if(cpuHand == 0 && myHand == 2) {
 				System.out.println("グー！");
-				break;
+				winFlg = true;
 			}
 
 
@@ -58,7 +58,7 @@ public class PTra04_05 {
 				continue;
 			}else if(cpuHand == 1 && myHand == 0) {
 				System.out.println("チョキ！！");
-				break;
+				winFlg = true;
 			}
 
 
@@ -67,7 +67,7 @@ public class PTra04_05 {
 				continue;
 			}else if(cpuHand == 2 && myHand == 1) {
 				System.out.println("パー！！");
-				break;
+				winFlg = true;
 			}
 		}
 	}
